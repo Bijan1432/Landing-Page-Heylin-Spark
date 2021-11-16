@@ -1,0 +1,284 @@
+/* *{
+    box-sizing: border-box;
+    margin: 0 !important;
+    padding: 0 !important;
+    outline: none;
+} */
+body{
+    box-sizing: border-box;
+  
+}
+p{
+    font-family: 'Roboto', sans-serif !important;
+}
+.center{
+    text-align: center;
+}
+
+:root{
+    --primary-color:#d83a3a;
+    
+}
+/* header section========================  */
+
+.banner{
+    /* background-image: url('images/background.png'); */
+    background:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0,0,0)), url(images/Untitled\ design.png);
+    background-position: center;
+    background-size: cover;
+    padding-top: 140px;
+    height: 100vh;
+    width: 100%;
+
+}
+.text{
+    color: white;
+}
+.text h1{
+    font-size: 44px;
+    font-weight: bold;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+.text span{
+    color: #d83a3a;
+}
+
+.text img{
+    margin-top: -60px;
+}
+
+.text p{
+    font-size: 17px;
+}
+/* .container{
+     padding-top: 10% !important; 
+}
+ .text-col{
+    margin-left: 10% !important;
+} */
+.form{
+    background-color: #d83a3a;
+    padding: 33px;
+    border-radius:14px;
+}
+
+.form-group{
+    margin-bottom: 15px !important;
+}
+
+.form-header{
+    color: rgb(0, 0, 0);
+    background-color: white;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: -20%;
+    text-align: center;
+    border-radius: 5px;
+    padding: 12px;
+    margin-bottom: 14px;
+    
+}
+
+.btn{
+    padding: 9px 128px 13px !important;
+    background-color: #000000;
+    border: none;
+}
+h2{
+    margin-bottom: 25px;
+}
+/* packages================================  */
+.packages{
+    margin-top: 5%;
+}
+.packageB, .packageA{
+    /* text-align: center; */
+    margin-left: 10px;
+}
+
+/* ===========important========  */
+
+
+/* =================why RR=================  */
+.right ul li{
+list-style: none;
+}
+.fa-check{
+    color: var(--primary-color);
+}
+
+/* .owl-prev,
+.owl-next{
+    color: white !important;
+    background-color: rgb(10, 10, 39) !important;
+    border-radius: 50px !important;
+} */
+
+
+.pak h1::after{
+    content: '';
+    display: block;
+    background-color: #d83a3a;
+    width: 123px;
+    margin-left: 44.4%;
+    height: 3px;
+    margin-top: 10px;
+}
+
+
+.pak-w h1::after{
+    width: 216px;
+    margin-left: 40.4%;
+}
+.pak-I h1::after{
+    width: 128px;
+    margin-left: 41.8%;
+    background-color: #ffffff;
+}
+
+li img{
+    height: 18px;
+    vertical-align: top;
+    margin-top: 6px;
+}
+
+li{
+    list-style: none;
+   
+}
+
+li p{
+   display: inline-block;
+  
+}
+ul{
+    padding-left: 8px;
+}
+
+
+
+
+.owl-theme .owl-nav {
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    right: -30px;
+    margin-top: -40px;
+}
+
+.owl-theme .owl-nav .owl-prev {
+    position: absolute;
+    left: -90px;
+    width: 74px;
+    height: 74px;
+    color: #ffffff;
+    line-height: 74px;
+    text-align: center;
+    border-radius: 50px;
+    margin-right: 10px;
+    font-size: 14px;
+    display: inline-block;
+  
+    -webkit-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    transition: all 300ms ease;
+    
+}
+
+.owl-theme .owl-nav .owl-next {
+    position: absolute;
+    right: -90px;
+    width: 74px;
+    height: 74px;
+    color: #ffffff;
+    line-height: 74px;
+    text-align: center;
+    border-radius: 50px;
+    margin-right: 10px;
+    font-size: 14px;
+    display: inline-block;
+
+    -webkit-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+button span{
+    font-size: 30px;
+}
+.owl-next,
+.owl-prev{
+    padding-bottom: 10px !important;
+    color: white !important;
+    background-color: rgb(10, 10, 39) !important;
+
+} 
+.package{
+    margin: 45px 0px;
+}
+@media (max-width:600px){
+    .owl-theme .owl-nav{
+    display: none;
+ }
+ .banner{
+    
+        padding-bottom: 280%;
+    }
+    .media-col{
+        margin-top:20%;
+    }
+    .btn{
+        padding: 9px 110px 13px !important;
+    }
+  .text h1{
+       font-size: 40px;
+   }
+.row{
+    --bs-gutter-x:0 !important;
+}
+   .pak-w h1::after{
+   width: 177px;
+       margin-left: 23.4%;
+ }
+ .pak-I h1::after{
+    width: 85px;
+    margin-left: 36.8%;
+ }
+ .pak h1::after{
+    width: 95px;
+     margin-left: 34.4%;
+    
+ }
+ .why-col ul{
+    padding-left: 0 !important;
+ }
+
+.wid-8 p{
+  width: 80% !important;
+ }
+ ul {
+     padding-left: 22px;
+ }
+
+}
+.pa ul li{
+    list-style:none;
+padding-left: 12px;
+}
+ 
+.pa ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: red; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    /* margin-left: -1em; Also needed for space (tweak if needed) */
+  }
+.pa ul li p{
+    vertical-align: top;
+}
+
