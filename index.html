@@ -1,442 +1,2455 @@
-<!doctype html>
-<html lang="en">
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<?php include('includes/header.php'); ?>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="owl.min.css">
-    <link rel="stylesheet" href="owl.theme.min.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/231abf9bc3.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Open+Sans:ital,wght@0,500;0,600;0,700;1,500&family=Ovo&family=Raleway:ital,wght@0,300;0,400;1,300&family=Roboto:wght@300&display=swap"
-        rel="stylesheet">
-    <title>Landing Page - Heylin Spark</title>
-</head>
+<style type="text/css">
+@media (max-width: 991px) {
+  .about-banner img {
+    max-width: 200px ;
+  }
+  h4, .h4{
+    font-size: 18px;
+  }
+  h2, .h2{
+    font-size: 22px;
+  }
+  .section-p-about .text-lg {
+    font-size: 18px;
+  }
+  .text-reveal {
+    font-size: 2.0rem;
+    line-height: 2.5rem;
+  }
+  .section-home-about .hand-font {
+    font-size: 25px;
+  }
+  .year-main .round-year{
+    font-size: 25px;
+  }
+  .section-home-categories h3, .section-home-categories .h3 {
+    font-size: 16px;
+    line-height: 2.5rem;
+  }
+  .categories .round-year{
+    font-size: 14px;
+    padding: 4px 0;
+  }
+  .footer {
+    padding: 3rem 1.3rem 1rem;
+  }
+}
+@media (max-width: 767px) {
+  .about-banner img {
+    max-width: 150px;
+  }
+  .text-reveal {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .section-home-about .hand-font {
+    font-size: 20px;
+  }
+  .categories .round-year {
+    font-size: 14px;
+    padding: 4px 15px;
+  }
+  /*menu*/
+  .slidemenu .menu-focus li a{
+    font-size: 19px;
+  }
 
-<body>
+}
+
+@media (max-width: 480px) {
+.about-banner img {
+  max-width: 100%;
+}
+.about-banner .row .col {
+  width: 100% !important;
+  flex: auto !important;
+}
+.about-banner, .about-banner .row{
+  height: auto;
+}
+.section {
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+.section-p-about .col-md-11 .row .col{
+  width: 100% !important;
+  flex: auto !important;
+}
+.footer .social-box .basic-list li{
+  float: left;
+  width: auto;
+  margin-right: 15px;
+}
+.footer .bottom-text p{
+  text-align: center;
+}
+.footer .bottom-text span{
+  width: 100%;
+  margin-left: 0px;
+  float: left;
+}
+}
+
+
+</style>
 
 
 
-    <div class="banner">
+<div class="about-banner" style="background-image: url('img/red-bg.png');">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col">
+				<img src="img/circle2.png" alt="" class="img-fluid mt-3 mb-3 rhorizontal">
+			</div>
+			<div class="col">
+				<img src="img/circle1.png" alt="" class="img-fluid mt-3 mb-3" data-aos="fade-left" data-aos-delay="300">
+				<p data-aos="fade-left" data-aos-delay="600">Ashish Bajoria and Suman Kanodia founded Scarlet Splendour in 2014. The siblings grew up in Kolkata, India with a deep sense of appreciation for the aesthetic. They combined their mutual passion for design to form Scarlet Splendour, with a view to integrate their maximalist sensibilities and become, possibly, the first design editors in India.</p>
+			</div>
+		</div>
+	</div>
+</div>
 
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-10 ">
-                    <div class="row justify-content-center">
-                        <div class="col-md-7" style="padding: 26px !important">
-                            <div class="text">
-                                <img src="images/Screen-Shot-2020-12-04-at-6.15.51-PM.png" alt="">
-                                <h1>
-                                    Heylin Spark is a strategic <span> marketing communications </span>firm
-                                </h1>
-                                <p>Assisting leading public and private sector organisations in <br> managing brand
-                                    reputation and to reach the right audience
-                                </p>
-                            </div>
-                            <!-- <a href="#" class="btn btn-primary btn-lg" style="background-color:#d83a3a;">Lorem ipsum
-                            </a> -->
+<div class="about-logos">
+	<div class="container" data-aos="fade-up" data-aos-delay="300">
+		<div class="row align-items-center mt-4">
+			<div class="col-md-3">
+				<h4>We got our names mentioned in</h4>
+			</div>
+			<div class="col-md-9">
+				<div class="row row-logos-list align-items-center">
+					<div class="col">
+						<img src="img/logo1.png" alt="" class="img-fluid">
+					</div>
+					<div class="col">
+						<img src="img/logo2.png" alt="" class="img-fluid">
+					</div>
+					<div class="col">
+						<img src="img/logo3.png" alt="" class="img-fluid">
+					</div>
+					<div class="col">
+						<img src="img/logo4.png" alt="" class="img-fluid">
+					</div>
+					<div class="col">
+						<img src="img/logo5.png" alt="" class="img-fluid">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="line"></div>
+	</div>
+</div>
+
+<div class="section section-p-about">
+	<div class="container">
+		<div class="row justify-content-md-center">
+			<div class="col-md-8 text-center">
+				<img src="img/scarlet-text.png" alt="" class="img-fluid mt-3 mb-3" data-aos="zoom-in" data-aos-delay="300">
+				<h2 data-aos="fade-up" data-aos-delay="300">FURNITURE IN BEAUTIFUL SPACES FROM AROUND THE WORLD.</h2>
+				<div class="line" data-aos="fade-up" data-aos-delay="300"></div>
+			</div>
+			<div class="col col-md-11" data-aos="fade-up" data-aos-delay="800">
+				<p class="text-lg">Ashish Bajoria and Suman Kanodia founded Scarlet Splendour in 2014. The siblings grew up in Kolkata, India with a deep sense of appreciation for the aesthetic. They combined their mutual passion for design to form Scarlet Splendour, with a view to integrate their maximalist sensibilities and become, possibly, the first design editors in India.</p>
+
+				<div class="row">
+					<div class="col">
+						<p>They set out to create trailblazing furniture, lighting, and rugs on the borders of classical and modern, whimsical and serious, and functional and dramatic. Scarlet Splendour has collaborated with international stores, press agencies, artists, and designers to transform and take local craftsmanship to global levels. The company heralds a blend of cultures and transcends geographical boundaries to achieve the extraordinary in the design world.</p>
+					</div>
+					<div class="col">
+						<p>They set out to create trailblazing furniture, lighting, and rugs on the borders of classical and modern, whimsical and serious, and functional and dramatic. Scarlet Splendour has collaborated with international stores, press agencies, artists, and designers to transform and take local craftsmanship to global levels. The company heralds a blend of cultures and transcends geographical boundaries to achieve the extraordinary in the design world.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="video-banner" data-vide-bg="videos/about1" data-vide-options="loop: true, muted: true"></div>
+
+<div class="container-fluid" data-aos="zoom-in" data-aos-delay="300">
+	<div class="row">
+		<div class="col-md-12">
+			<img src="img/star-cast.png" alt="" class="img-fluid">
+		</div>
+	</div>
+</div>
+
+<img src="img/about2.png" alt="" class="img-fluid" data-aos="zoom-in" data-aos-delay="300">
 
 
-                        </div>
 
-                        <div class="col-md-5 media-col">
-                            <div class="form">
-                                <div class="form-header">
-                                    <h3 style="margin-bottom: 0; font-weight: bold;">Register Now
-                                    </h3>
-                                    <!-- <p>fill all the fields*</p> -->
-                                </div>
-                                <form id="" method="post" action="">
-                                    <input type="hidden" name="_token" value="">
-                                    <div class="form-group">
-                                        <input type="text" name="name" required="" class="form-control "
-                                            placeholder="Name *" value="">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="email" name="email" required="" class="form-control "
-                                            placeholder="E-mail *" value="">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" name="phone" required="" class="form-control "
-                                            placeholder="Phone *" value="" minlength="10">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" name="year" class="form-control "
-                                            placeholder="Year of Graduation *" value="">
-                                    </div>
-
-                                    <div class="text text-danger recaptcha-error"></div>
-                                    <div class="form-group">
-                                        <button class="btn btn-primary btn-lg " type="submit">Submit</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+<div class="section section-home-about pb0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 mx-auto text-center">
+        <div class="widget">
+          <h2 class="text-reveal">
+            <span class="reveal"></span>
+            <span class="text" >Contemporary Luxury Designer Furniture</span>
+          </h2>
+          <div class="hand-font" data-aos="zoom-in" data-aos-delay="300">Sumptuous Delights</div>
+          <p data-aos="fade-up" data-aos-delay="300">Bootstrap is a mobile-first front-end framework. I've included the correct order for the Media Queries below, but I've also included at the bottom of them the non-mobile first breakpoints in case some people aren't used to the mobile-first.</p>
         </div>
+      </div>
     </div>
+  </div>
+</div>
 
-
-    <!-- ================ packages============== -->
-    <div class="container  " style="padding-bottom:45px;">
-        <div class="center pak" style="margin-bottom: 30px;margin-top: 30px;">
-            <h1 style="font-weight: bold;"> All Package</h1>
+<div class="section section-category section-home-categories">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <div class="categories ml0 mr0">
+          <div class="category year-main ml0 mr0 " data-aos="zoom-in" data-aos-delay="100">
+            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="redius-12">
+              <!-- <div class="round-year">Apr 2015</div> -->
+              <img src="img/modal-carrousel/img-MDW.jpg" class="img-fluid" alt="">
+            </a>
+            <h3 class="text-reveal">MILAN DESIGN WEEK</h3>
+            <span>
+              <p>APR 2015</p>
+            </span>
+          </div>
         </div>
-        <div class="row">
-            <div class="col-md-5 offset-md-1 pa">
-                <div class="packageB ">
-                    <h2>Package A</h2>
-                </div>
-                <ul>
-                    <li >
-                        <p style="width: 80%;" >Distribute Your Press Release/Article to 150+ Media Sitesincluding The Times of
-                            India, The
-                            Economic Times, Zee News,Hindustan Times, Financial Express, Business Standard and
-                            ManyMore...</p>
-                    </li>
-                    <li>
-                        <p style="width: 80%;">Guaranteed coverage on 60+ International, National and Regionalsites.</p>
-                    </li>
-                    <li>
-                        <p style="width: 80%;">Guaranteed Visibility in Google News</p>
-                    </li>
-                    <li>
-                        <p style="width: 80%;">Guaranteed Coverage on ANI News, Asian News International</p>
-                    </li>
-                    <li>
-                        <p style="width: 80%;">Guaranteed Free Coverages worth Rs. 15000
-                            on American andEuropean News sites - Morning Mail Live and Euro Global Post</p>
-                    </li>
-            </div>
-            </ul>
-
-            <div class="col-md-4 offset-md-2 pa">
-                <div class="packageB">
-                    <h2>Package B</h2>
-                </div>
-                <ul>
-                    <li>
-                        <p>Fortune India - 45000</p>
-                    </li>
-                    <li>
-                        <p>The Hindu - 35000</p>
-                    </li>
-                    <li>
-                        <p>India Today - 30000</p>
-                    </li>
-                    <li>
-                        <p>Hindustan Times - 15000</p>
-                    </li>
-                    <li>
-                        <p>Business Standard - 16000</p>
-                    </li>
-                    <li>
-                        <p>Deccan Herald - 14000</p>
-                    </li>
-                    <li>
-                        <p>Financial Express- 25000</p>
-                    </li>
-                </ul>
-            </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="categories ml0 mr0">
+          <div class="category year-main ml0 mr0" data-aos="zoom-in" data-aos-delay="100">
+            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal2" class="redius-12">
+              <!-- <div class="round-year">Sep 2015</div> -->
+              <img src="img/modal-carrousel/img-LDW.jpg" class="img-fluid" alt="">
+            </a>
+            <h3 class="text-reveal">LONDON DESIGN WEEK</h3>
+            <span>
+              <p>SEP 2015</p>
+            </span>
+          </div>
         </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="categories ml0 mr0">
+          <div class="category year-main ml0 mr0" data-aos="zoom-in" data-aos-delay="100">
+            <a href=""  data-bs-toggle="modal" data-bs-target="#exampleModal3" class="redius-12">
+              <!-- <div class="round-year">Oct 2015</div> -->
+              <img src="img/modal-carrousel/img-TIS.jpg" class="img-fluid" alt="">
+            </a>
+            <h3 class="text-reveal">THE INDIA STORY</h3>
+            <span>
+              <p>OCT 2015</p>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="categories ml0 mr0">
+          <div class="category year-main ml0 mr0" data-aos="zoom-in" data-aos-delay="100">
+            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal4" class=" redius-12">
+              <!-- <div class="round-year">Oct 2015</div> -->
+              <img src="videos/video-5.jpg" class="img-fluid" alt="">
+            </a>
+            <h3 class="text-reveal">ROSSANA ORLANDI</h3>
+            <span><p>OCT 2015</p></span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="categories ml0 mr0">
+          <div class="category year-main ml0 mr0" data-aos="zoom-in" data-aos-delay="100">
+            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal5" class="redius-12">
+              <!-- <div class="round-year">Feb 2016</div> -->
+              <img src="img/modal-carrousel/img-ID-2016.png" class="img-fluid" alt="">
+            </a>
+            <h3 class="text-reveal">INDIA DESIGN ID</h3>
+            <span>
+              <p>FEB 2016</p>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="categories ml0 mr0">
+          <div class="category year-main ml0 mr0" data-aos="zoom-in" data-aos-delay="100">
+            <a href=""  data-bs-toggle="modal" data-bs-target="#exampleModal6" class="redius-12">
+              <!-- <div class="round-year">APR 2016</div> -->
+              <img src="img/modal-carrousel/milan design/img-Salone2016.jpg" class="img-fluid" alt="">
+            </a>
+            <h3 class="text-reveal">MILAN DESIGN WEEK</h3>
+            <span>
+              <P>
+              APR 2016
+              </P>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="categories ml0 mr0">
+          <div class="category year-main ml0 mr0" data-aos="zoom-in" data-aos-delay="100">
+            <a href=""  data-bs-toggle="modal" data-bs-target="#exampleModal7" class="redius-12">
+              <!-- <div class="round-year">OCT 2016</div> -->
+              <img src="img/modal-carrousel/Vogue Bffs/img-Bffs-epi2-MazN.jpg" class="img-fluid" alt="">
+            </a>
+            <h3 class="text-reveal">VOGUE BFFS</h3>
+            <span>
+              <p>OCT 2016</p>
+            </span>
+          </div>
+        </div>
+      </div>
+     
+      <div class="col-md-4 text-center">
+        <div class="categories ml0 mr0">
+          <div class="category year-main ml0 mr0" data-aos="zoom-in" data-aos-delay="100">
+            <a href=""  data-bs-toggle="modal" data-bs-target="#exampleModal8" class="redius-12">
+              <!-- <div class="round-year">FEB 2017</div> -->
+              <img src="img/modal-carrousel/India design id/img-ID-closure-gruK.jpg" class="img-fluid" alt="">
+            </a>
+            <h3 class="text-reveal">INDIA DESIGN ID</h3>
+            <span>
+              <p>
+                FEB 2017
+              </p>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="categories ml0 mr0">
+          <div class="category year-main ml0 mr0" data-aos="zoom-in" data-aos-delay="100">
+            <a href=""  data-bs-toggle="modal" data-bs-target="#exampleModal9" class="redius-12">
+              <!-- <div class="round-year">APR 2017</div> -->
+              <img src="img/modal-carrousel/Milan Design week/img-MDW2017.jpg" class="img-fluid" alt="">
+            </a>
+            <h3 class="text-reveal">MILAN DESIGN WEEK</h3>
+            <SPAN>
+              <P>APR 2017</P>
+            </SPAN>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="categories ml0 mr0">
+          <div class="category year-main ml0 mr0" data-aos="zoom-in" data-aos-delay="100">
+            <a href=""  data-bs-toggle="modal" data-bs-target="#exampleModal10" class="redius-12">
+              <!-- <div class="round-year">Jul 2017</div> -->
+              <img src="img/products/procat27.jpg" class="img-fluid" alt="">
+            </a>
+            <h3 class="text-reveal">WORLD OF SCARLET</h3>
+            <SPAN>
+              <P>
+                JUL 2017
+              </P>
+            </SPAN>
+          </div>
+        </div>
+      </div>
 
+      <div class="col-md-4 text-center">
+        <div class="categories ml0 mr0">
+          <div class="category year-main ml0 mr0" data-aos="zoom-in" data-aos-delay="100">
+            <a href=""  data-bs-toggle="modal" data-bs-target="#exampleModal11" class="redius-12">
+              <!-- <div class="round-year">SEP 2017</div> -->
+              <img src="img/modal-carrousel/IDS VANCOUVER/img-IDS_0.jpg" class="img-fluid" alt="">
+            </a>
+            <h3 class="text-reveal">IDS VANCOUVER</h3>
+            <SPAN>
+              <P>SEP 2017</P>
+            </SPAN>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="categories ml0 mr0">
+          <div class="category year-main ml0 mr0" data-aos="zoom-in" data-aos-delay="100">
+            <a href=""  data-bs-toggle="modal" data-bs-target="#exampleModal12" class="redius-12">
+              <!-- <div class="round-year">OCT 2017</div> -->
+              <img src="img/modal-carrousel/FOUR SEASONS MUMBAI/img-fourseasons.jpg" class="img-fluid" alt="">
+            </a>
+            <h3 class="text-reveal">FOUR SEASONS MUMBAI</h3>
+            <SPAN><P>OCT 2017</P></SPAN>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="categories ml0 mr0">
+          <div class="category year-main ml0 mr0" data-aos="zoom-in" data-aos-delay="100">
+            <a href=""  data-bs-toggle="modal" data-bs-target="#exampleModal13" class="redius-12">
+              <!-- <div class="round-year">NOV 2017</div> -->
+              <img src="img/modal-carrousel/IDECORAMA/img-iDECORAMA.jpg" class="img-fluid" alt="">
+            </a>
+            <h3 class="text-reveal">IDECORAMA</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="categories ml0 mr0">
+          <div class="category year-main ml0 mr0" data-aos="zoom-in" data-aos-delay="100">
+            <a href=""  data-bs-toggle="modal" data-bs-target="#exampleModal14" class="redius-12">
+              <!-- <div class="round-year">FEB 2018</div> -->
+              <img src="img/modal-carrousel/INDIA DESIGN ID 2020/india_design_2020_0.jpg" class="img-fluid" alt="">
+            </a>
+            <h3 class="text-reveal">INDIA DESIGN ID</h3>
+            <SPAN>
+              <P>FEB 2018</P>
+            </SPAN>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="col-md-4 text-center">
+        <div class="categories ml0 mr0">
+          <div class="category year-main ml0 mr0" data-aos="zoom-in" data-aos-delay="100">
+            <a href=""  data-bs-toggle="modal" data-bs-target="#exampleModal15" class=" redius-12">
+              <!-- <div class="round-year">FEB 2018</div> -->
+              <img src="img/modal-carrousel/ALTAGAMMA/img-Altagama.jpg" class="img-fluid" alt="">
+            </a>
+            <h3 class="text-reveal">ALTAGAMMA</h3>
+            <SPAN>
+              <P>FEB 2018</P>
+            </SPAN>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 text-center">
+        <div class="categories ml0 mr0">
+          <div class="category year-main ml0 mr0" data-aos="zoom-in" data-aos-delay="100">
+            <a href=""  data-bs-toggle="modal" data-bs-target="#exampleModal16" class=" redius-12">
+              <!-- <div class="round-year">MAR 2018</div> -->
+              <img src="img/modal-carrousel/DCODE/img-Dcode-2018.jpg" class="img-fluid" alt="">
+            </a>
+            <h3 class="text-reveal">D/CODE</h3>
+            <SPAN>
+              <P>
+                MAR 2018
+              </P>
+            </SPAN>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="categories ml0 mr0">
+          <div class="category year-main ml0 mr0" data-aos="zoom-in" data-aos-delay="100">
+            <a href=""  data-bs-toggle="modal" data-bs-target="#exampleModal17" class=" redius-12">
+              <!-- <div class="round-year">APR 2018</div> -->
+              <img src="img/modal-carrousel/MILAN DESIGN WEEK 2018/img-salone2018.jpg" class="img-fluid" alt="">
+            </a>
+            <h3 class="text-reveal">MILAN DESIGN WEEK</h3>
+            <SPAN>
+              <P>APR 2018</P>
+            </SPAN>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="categories ml0 mr0">
+          <div class="category year-main ml0 mr0" data-aos="zoom-in" data-aos-delay="100">
+            <a href=" " data-bs-toggle="modal" data-bs-target="#exampleModal18" class=" redius-12">
+              <!-- <div class="round-year">FEB 2019</div> -->
+              <img src="img/modal-carrousel/COLOURNEXT 2019/Static post for event thumbnail.jpg" class="img-fluid" alt="">
+            </a>
+            <h3 class="text-reveal">COLOURNEXT 2019</h3>
+            <SPAN>
+              <P>
+                FEB 2019
+              </P>
+            </SPAN>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="categories ml0 mr0">
+          <div class="category year-main ml0 mr0" data-aos="zoom-in" data-aos-delay="100">
+            <a href=""  data-bs-toggle="modal" data-bs-target="#exampleModal19" class=" redius-12">
+              <!-- <div class="round-year">APR 2019</div> -->
+              <img src="img/modal-carrousel/MILAN DESIGN WEEK 2019/PressKit2_0-min_0.jpg" class="img-fluid" alt="">
+            </a>
+            <h3 class="text-reveal">MILAN DESIGN WEEK</h3>
+            <SPAN>
+              <P>
+                APR 2019
+              </P>
+            </SPAN>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="categories ml0 mr0">
+          <div class="category year-main ml0 mr0" data-aos="zoom-in" data-aos-delay="100">
+            <a href=""  data-bs-toggle="modal" data-bs-target="#exampleModal20" class=" redius-12">
+              <!-- <div class="round-year">Jun 2019</div> -->
+              <img src="img/products/procat31.png" class="img-fluid" alt="">
+            </a>
+            <h3 class="text-reveal">MATTEO CIBIC</h3>
+            <SPAN>
+              <P>
+                JUN 2019
+              </P>
+            </SPAN>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="categories ml0 mr0">
+          <div class="category year-main ml0 mr0" data-aos="zoom-in" data-aos-delay="100">
+            <a href=""  data-bs-toggle="modal" data-bs-target="#exampleModal21" class=" redius-12">
+              <!-- <div class="round-year">Jun 2019</div> -->
+              <img src="img/products/procat30.png" class="img-fluid" alt="">
+            </a>
+            <h3 class="text-reveal">RICHARD HUTTEN</h3>
+            <SPAN>
+              <P>
+                JUN  2019
+              </P>
+            </SPAN>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="categories ml0 mr0">
+          <div class="category year-main ml0 mr0" data-aos="zoom-in" data-aos-delay="100">
+            <a href=""  data-bs-toggle="modal" data-bs-target="#exampleModal22" class=" redius-12">
+              <!-- <div class="round-year">Jun 2019</div> -->
+              <img src="img/products/procat29.png" class="img-fluid" alt="">
+            </a>
+            <h3 class="text-reveal">NIKA ZUPANC</h3>
+            <SPAN>
+              <P></P>
+            </SPAN>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="categories ml0 mr0">
+          <div class="category year-main ml0 mr0" data-aos="zoom-in" data-aos-delay="100">
+            <a href=" " data-bs-toggle="modal" data-bs-target="#exampleModal23" class=" redius-12">
+              <!-- <div class="round-year">Jun 2019</div> -->
+              <img src="img/products/procat28.jpg" class="img-fluid" alt="">
+            </a>
+            <h3 class="text-reveal">ARTEFATTO DESIGN STUDIO</h3>
+            <SPAN>
+              <P>
+                JUN 2019
+              </P>
+            </SPAN>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="categories ml0 mr0">
+          <div class="category year-main ml0 mr0" data-aos="zoom-in" data-aos-delay="100">
+            <a href=""  data-bs-toggle="modal" data-bs-target="#exampleModal24" class=" redius-12">
+              <!-- <div class="round-year">FEB 2019</div> -->
+              <img src="img/modal-carrousel/AD DESIGN SHOW 2019/AD Thumbnail.jpg" class="img-fluid" alt="">
+            </a>
+            <h3 class="text-reveal">AD DESIGN SHOW 2019</h3>
+            <SPAN>
+              <P>
+              OCT 2019
+              </P>
+            </SPAN>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="categories ml0 mr0">
+          <div class="category year-main ml0 mr0" data-aos="zoom-in" data-aos-delay="100">
+            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal25" class=" redius-12">
+              <!-- <div class="round-year">OCT 2019</div> -->
+              <img src="img/modal-carrousel/THE TWISTED SUNDAY BRUNCH/Vogue Brunch Event Page Thumbnail_0.jpg" class="img-fluid" alt="">
+            </a>
+            <h3 class="text-reveal">THE TWISTED SUNDAY BRUNCH</h3>
+            <SPAN>
+              <P>NOV 2019</P>
+            </SPAN>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="col-md-4 text-center">
+        <div class="categories ml0 mr0">
+          <div class="category year-main ml0 mr0" data-aos="zoom-in" data-aos-delay="100">
+            <a href=""  data-bs-toggle="modal" data-bs-target="#exampleModal26" class=" redius-12">
+              <!-- <div class="round-year">NOV 2019</div> -->
+              <img src="img\modal-carrousel\10 CHAIRS X STIR/Scarlet_Website_10 chair Thumbnail-04.jpg" class="img-fluid" alt="">
+            </a>
+            <h3 class="text-reveal">10 CHAIRS X STIR</h3>
+            <SPAN>
+              <P>
+                NOV 2019
+              </P>
+            </SPAN>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="categories ml0 mr0">
+          <div class="category year-main ml0 mr0" data-aos="zoom-in" data-aos-delay="100">
+            <a href=""  data-bs-toggle="modal" data-bs-target="#exampleModal27" class=" redius-12">
+              <!-- <div class="round-year">FEB 2020</div> -->
+              <img src="img\modal-carrousel\INDIA DESIGN ID 2020\india_design_2020_0.jpg" class="img-fluid" alt="">
+            </a>
+            <h3 class="text-reveal">INDIA DESIGN ID 2020</h3>
+            <SPAN>
+              <P>
+                FEB 2020
+              </P>
+            </SPAN>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="categories ml0 mr0">
+          <div class="category year-main ml0 mr0" data-aos="zoom-in" data-aos-delay="100">
+            <a href=""  data-bs-toggle="modal" data-bs-target="#exampleModal28" class=" redius-12">
+              <!-- <div class="round-year">Jun 2020</div> -->
+              <img src="img/products/procat25.jpeg" class="img-fluid" alt="">
+            </a>
+            <h3 class="text-reveal">THE FOREST COMES HOME</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="categories ml0 mr0">
+          <div class="category year-main ml0 mr0" data-aos="zoom-in" data-aos-delay="100">
+            <a href=" " data-bs-toggle="modal" data-bs-target="#exampleModal29" class=" redius-12">
+              <!-- <div class="round-year">Jun 2020</div> -->
+              <img src="img/products/kaizen-collection.jpg" class="img-fluid" alt="">
+            </a>
+            <h3 class="text-reveal">KAIZEN CABINET</h3>
+            <SPAN>
+              <P>
+                JUN 2020
+              </P>
+            </SPAN>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="categories ml0 mr0">
+          <div class="category year-main ml0 mr0" data-aos="zoom-in" data-aos-delay="100">
+            <a href=""  data-bs-toggle="modal" data-bs-target="#exampleModal30" class=" redius-12">
+              <!-- <div class="round-year">Jun 2020</div> -->
+              <img src="img/products/procat2.jpg" class="img-fluid" alt="">
+            </a>
+            <h3 class="text-reveal">THE DANCE OF THE CHHAU</h3>
+            <SPAN>
+              <P>JUN 2020</P>
+            </SPAN>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="categories ml0 mr0">
+          <div class="category year-main ml0 mr0" data-aos="zoom-in" data-aos-delay="100">
+            <a href=""  data-bs-toggle="modal" data-bs-target="#exampleModal31" class=" redius-12">
+              <!-- <div class="round-year">FEB 2019</div> -->
+              <img src="img/products/procat3.jpg" class="img-fluid" alt="">
+            </a>
+            <h3 class="text-reveal">DON CIUCO AND MIMI'S BOYS</h3>
+            <SPAN>
+              <P>
+                FEB 2019
+              </P>
+            </SPAN>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="categories ml0 mr0">
+          <div class="category year-main ml0 mr0" data-aos="zoom-in" data-aos-delay="100">
+            <a href=""  data-bs-toggle="modal" data-bs-target="#exampleModal32" class=" redius-12">
+              <!-- <div class="round-year">Jun 2020</div> -->
+              <img src="img/products/procat7.jpg" class="img-fluid" alt="">
+            </a>
+            <h3 class="text-reveal">BONJOUR MONSIEUR ELIE!</h3>
+            <SPAN>
+              <P>JUN 2020</P>
+            </SPAN>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="categories ml0 mr0">
+          <div class="category year-main ml0 mr0" data-aos="zoom-in" data-aos-delay="100">
+            <a href=""  data-bs-toggle="modal" data-bs-target="#exampleModal33" class=" redius-12">
+              <!-- <div class="round-year">Jun 2020</div> -->
+              <img src="img/products/procat26.jpg" class="img-fluid" alt="">
+            </a>
+            <h3 class="text-reveal">THE FOREST COMES HOME</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="categories ml0 mr0">
+          <div class="category year-main ml0 mr0" data-aos="zoom-in" data-aos-delay="100">
+            <a href=" " data-bs-toggle="modal" data-bs-target="#exampleModal34" class=" redius-12">
+              <!-- <div class="round-year">Jul 2020</div> -->
+              <img src="img/products/procat1.jpg" class="img-fluid" alt="">
+            </a>
+            <h3 class="text-reveal">GILDED STRINGS</h3>
+            <SPAN>
+              <P>JUL 2020</P>
+            </SPAN>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="categories ml0 mr0">
+          <div class="category year-main ml0 mr0" data-aos="zoom-in" data-aos-delay="100">
+            <a href=""  data-bs-toggle="modal" data-bs-target="#exampleModal35" class=" redius-12">
+              <!-- <div class="round-year">Jul 2020/div> -->
+              <img src="img/products/oasis-collection.jpg" class="img-fluid" alt="">
+            </a> 
+            <h3 class="text-reveal">MEET ME AT THE OASIS</h3>
+            <SPAN>
+              <P>JUL 2020</P>
+            </SPAN>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="categories ml0 mr0">
+          <div class="category year-main ml0 mr0" data-aos="zoom-in" data-aos-delay="100">
+            <a href=""  data-bs-toggle="modal" data-bs-target="#exampleModal36" class=" redius-12">
+              <!-- <div class="round-year">Nov 2020</div> -->
+              <img src="img/products/procat15.jpg" class="img-fluid" alt="">
+            </a>
+            <h3 class="text-reveal">THE LOTUS SANCTUM BASRA</h3>
+            <SPAN>
+              <P>NOV 2020</P>
+            </SPAN>
+          </div>
+        </div>
+      </div>
+    
+      
     </div>
-
-
-    <!-- ============== Important=============  -->
-
-
-    <div style="color: white; padding: 45px 0;" class="bg-col">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-md-8 offset-md-2 center pak pak-I">
-                    <h1 style="color: #ffffff; padding-bottom: 30px;  ">Important</h1>
-                    <p>Content writing charges are extra, Rs. 1200 including content strategy,planning, research and
-                        writing
-                        services.
-                        Content will be developed as per media editorial policies and is subjected tominor changes by
-                        the
-                        media to publish it as per their editorial policies postthe client’s approval.
-                        Additional discounts are available on the annual PR contract.</p>
-                </div>
+  </div>
+</div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Modal -->
+<div class="modal modal-edit fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-width">
+    <div class="modal-content">
+      <div class="modal-body p0">
+        <div class="close-modal btn-close" data-bs-dismiss="modal" aria-label="Close"></div>
+        <img src="img/bg-mdw.jpg" class="img-fluid mb-5" alt="">
+        <div class="col-md-10 mx-auto mb-4">
+          <iframe width="100%" height="380"  src="https://www.youtube.com/embed/WPJSPfVmtiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="col-md-10 mx-auto">
+        <div id="about-slider" class="owl-carousel owl-theme">
+            <div class="item">
+            <img  src="img/_85K1595.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K1768.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2223.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2239.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2256.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2292.jpg" class="img-fluid mb-1" alt="">
             </div>
         </div>
-
-
-        <!-- ======================= Important=================  -->
-
-
-
-
-    </div>
-
-
-    <div class="container package">
-        <!-- <div class="center" style="margin-bottom: 30px;margin-top: 30px;">
-        <h1> All Package</h1>
-    </div> -->
-        <div class="row ">
-            <div class="col-md-5 offset-md-2 ">
-                <div class="packageB">
-                    <h2 style="">National TV Coverage</h2>
-                </div>
-                <ul>
-                    <li><img src="images/badge.png" alt="">
-                        <p>Actual Price - Rs. 75000</p>
-                    </li>
-                    <li><img src="images/badge.png" alt="">
-                        <p>Actual Price - Rs. 75000</p>
-                    </li>
-                    <li><img src="images/badge.png" alt="">
-                        <p>Discount- 60 %</p>
-                    </li>
-                    <li><img src="images/badge.png" alt="">
-                        <p>Offer Price- Just Rs. 30000</p>
-                    </li>
-
-
-                </ul>
-            </div>
-            <div class="col-md-4 offset-md-1">
-                <div class="packageB">
-                    <h2 style="">Global Achievers Awards 2021</h2>
-                </div>
-                <ul>
-                    <li> <img src="images/badge.png" alt="">
-                        <p>Digital Certificate of Appreciation</p>
-                    </li>
-                    <li><img src="images/badge.png" alt="">
-                        <p>Exclusive interview on HBW News</p>
-                    </li>
-                    <li><img src="images/badge.png" alt="">
-                        <p>Promotion on Facebook & Instagram</p>
-                    </li>
-                    <li><img src="images/badge.png" alt="">
-                        <p>Hindustan Times - 15000</p>
-                    </li>
-                    <li><img src="images/badge.png" alt="">
-                        <p>Promotion on Facebook & Instagram</p>
-                    </li>
-                    <li><img src="images/badge.png" alt="">
-                        <p style="width: 80%;">Awardees will be mentioned in HindustanTimes, Midday, Dailyhunt, Google
-                            News,Business
-                            Standard and 100+ media sites.</p>
-                    </li>
-
-                </ul>
-            </div>
         </div>
 
+          
+
+      </div>
     </div>
+  </div>
+</div>
 
 
-    <!-- =========why PR===========   -->
-    <div style="color: white; padding-bottom: 25px; margin-bottom: 25px;" class="bg-col">
 
-        <div class="container" style="padding: 45px 0px;">
 
-            <div class="row justify-content-center why-col">
-                <div class="col-6 right">
-                    <div class="why">
-                        <h2 style="margin-bottom: 25px;">WHY Public Relations</h2>
-                    </div>
-                    <ul>
-                        <li>
-                            <p><i class="fa fa-check"></i>
-                                Boost your our Brand Visibility
-                            </p>
-                        </li>
-                        <li>
-                            <p><i class="fa fa-check"></i>
-                                Manage Your Brand Reputation
-                            </p>
-                        </li>
-                        <li>
-                            <p><i class="fa fa-check"></i>
-                                Media Gives Third Party Validation
-                            </p>
-                        </li>
-                        <li>
-                            <p><i class="fa fa-check"></i>
-                                Attract More Customers and Investors
-                            </p>
-                        </li>
-                        <li>
-                            <p><i class="fa fa-check"></i>
-                                Build Customer Trust
-                            </p>
-                        </li>
-                        <li>
-                            <p><i class="fa fa-check"></i>
-                                Grow Your Business
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-4 right">
-                    <div class="why ">
-                        <h2 style="    margin-bottom: 25px;">Why Heylin Spark</h2>
-                    </div>
-                    <ul>
-                        <li>
-                            <p><i class="fa fa-check"></i>
-                                Strong Media Relations
-                            </p>
-                        </li>
-                        <li>
-                            <p><i class="fa fa-check"></i>
-                                Direct Tie-ups with all Major Media Houses
-                            </p>
-                        </li>
-                        <li>
-                            <p><i class="fa fa-check"></i>
-                                Experienced Team
-                            </p>
-                        </li>
-                        <li>
-                            <p><i class="fa fa-check"></i>
-                                Affordable Rates
-                            </p>
-                        </li>
-                        <li>
-                            <p><i class="fa fa-check"></i>
-                                Guaranteed Coverages
-                            </p>
-                        </li>
-                        <li>
-                            <p><i class="fa fa-check"></i>
-                                100 % Money Back Guarantee
-                            </p>
-                        </li>
-                        <li>
-                            <p><i class="fa fa-check"></i>
-                                200+ Happy Customers
-                            </p>
-                        </li>
-                    </ul>
+<div class="modal modal-edit fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-width">
+    <div class="modal-content">
+      <div class="modal-body p0">
+        <div class="close-modal btn-close " data-bs-dismiss="modal" aria-label="Close"></div>
+        <img src="img/modal-carrousel/bg-ldw.jpg" class="img-fluid mb-5" alt="">
+        <div class="col-md-10 mx-auto mb-4">
 
-                </div>
+        <iframe width="100%" height="380" src="https://www.youtube.com/embed/WPJSPfVmtiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+          <div class="col-md-10 mx-auto">
+          <div id="about-slider2" class="owl-carousel owl-theme">
+  <div class="item">
+          <img  src="img/modal-carrousel/MINT-LDF15-90.jpg" class="img-fluid mb-1" alt="">
+          </div>
+  <div class="item">
+          <img  src="img/modal-carrousel/MINT-LDF15-89.jpg" class="img-fluid mb-1" alt="">
+          </div>
+  <div class="item">
+          <img  src="img/modal-carrousel/MINT-LDF15-80.jpg" class="img-fluid mb-1" alt="">
+          </div>
+  <div class="item">
+          <img  src="img/modal-carrousel/IMG_3458.jpg" class="img-fluid mb-1" alt="">
+          </div>
+  <div class="item">
+          <img  src="img/modal-carrousel/IMG_3303.jpg" class="img-fluid mb-1" alt="">
+          </div>
+  <div class="item">
+          <img  src="img/modal-carrousel/MINT-LDF15-89.jpg" class="img-fluid mb-1" alt="">
+          </div>
+  <div class="item">
+          <img  src="img/modal-carrousel/MINT-LDF15-80.jpg" class="img-fluid mb-1" alt="">
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal modal-edit fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-width">
+    <div class="modal-content">
+      <div class="modal-body p0">
+        <div class="close-modal btn-close " data-bs-dismiss="modal" aria-label="Close"></div>
+        <img src="img/modal-carrousel/bg-tis.jpg" class="img-fluid mb-5" alt="">
+        <div class="col-md-10 mx-auto  mb-4">
+          <iframe width="100%" height="380" src="https://www.youtube.com/embed/hYG6nRYG0Us" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+            <div class="col-md-10 mx-auto  ">
+          <div id="about-slider3" class="owl-carousel owl-theme">
+  <div class="item">
+          <img  src="img/modal-carrousel/_Q8C0527.jpg" class="img-fluid mb-1" alt="">
+          </div>
+  <div class="item">
+          <img  src="img/modal-carrousel/085R9232-1.jpg" class="img-fluid mb-1" alt="">
+          </div>
+  <div class="item">
+          <img  src="img/modal-carrousel/_AJ_0010.jpg" class="img-fluid mb-1" alt="">
+          </div>
+  <div class="item">
+          <img  src="img/modal-carrousel/_AJ_0978.jpg" class="img-fluid mb-1" alt="">
+          </div>
+  <div class="item">
+          <img  src="img/modal-carrousel/_ENN0119.jpg" class="img-fluid mb-1" alt="">
+          </div>
+  <div class="item">
+          <img  src="img/modal-carrousel/_Q8C0276.jpg" class="img-fluid mb-1" alt="">
+          </div>
+  <div class="item">
+          <img  src="img/modal-carrousel/_85R8236.jpg" class="img-fluid mb-1" alt="">
+          </div>
+  <div class="item">
+          <img  src="img/modal-carrousel/_85R8241.jpg" class="img-fluid mb-1" alt="">
+          </div>
+  <div class="item">
+          <img  src="img/modal-carrousel/RAJ_2702.jpg" class="img-fluid mb-1" alt="">
+          </div>
+  <div class="item">
+          <img  src="img/modal-carrousel/RAJ_2532.jpg" class="img-fluid mb-1" alt="">
+          </div>
+  <div class="item">
+          <img  src="img/modal-carrousel/RAJ_0258.jpg" class="img-fluid mb-1" alt="">
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal modal-edit fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-width">
+    <div class="modal-content">
+      <div class="modal-body p0 h-full">
+        <div class="close-modal btn-close" data-bs-dismiss="modal" aria-label="Close"></div>
+        <!-- <img src="img/bg-mdw.jpg" class="img-fluid mb-5" alt=""> -->
+        <div class="col-md-10 mx-auto mb-4 center-verticaly">
+          <iframe width="100%" height="380"  src="http://www.youtube.com/embed/1exw-hLLfHU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <!-- <div class="col-md-10 mx-auto">
+        <div id="about-slider4" class="owl-carousel owl-theme">
+            <div class="item">
+            <img  src="img/_85K1595.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K1768.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2223.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2239.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2256.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2292.jpg" class="img-fluid mb-1" alt="">
             </div>
         </div>
+        </div> -->
+
+          
+
+      </div>
     </div>
-
-
-
-
-
-    <div class="container pak pak-w">
-        <h1 style="margin: 45px auto; text-align: center; ">Referral Coverages</h1>
-        <div class="row">
-            <div class="col-md-8 offset-md-2">
-
-
-                <div class=" owl-carousel owl-theme" id="owl-carousel1">
-
-
-
-                    <div class="item">
-                        <img src="images/img24.jpg" alt="">
-                    </div>
-                    <div class="item">
-                        <img src="images/img380.jpg" alt="">
-                    </div>
-                    <div class="item">
-                        <img src="images/img384.jpg" alt="">
-                    </div>
-                    <div class="item">
-                        <img src="images/img391.jpg" alt="">
-                    </div>
-                </div>
+  </div>
+</div>
+<div class="modal modal-edit fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-width">
+    <div class="modal-content">
+      <div class="modal-body p0">
+        <div class="close-modal btn-close" data-bs-dismiss="modal" aria-label="Close"></div>
+        <img src="img/modal-carrousel/bg-ID-2016.jpg" class="img-fluid mb-5" alt="">
+        <div class="col-md-10 mx-auto mb-4">
+          <iframe width="100%" height="380"  src="https://www.youtube.com/embed/Yd4bXAircMY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="col-md-10 mx-auto">
+        <div id="about-slider5" class="owl-carousel owl-theme">
+            <div class="item">
+            <img  src="img/modal-carrousel/ID01-aKZA.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/ID02-STQc.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/ID03-EHx9.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/ID04-9617.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/ID05-9BhP.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <!-- <div class="item">
+            <img  src="img/modal-carrousel/ID06-HZMb.jpg/" class="img-fluid mb-1" alt="">
+            </div> -->
+            <div class="item">
+            <img  src="img/modal-carrousel/ID07-PKsJ.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/ID08-R1Hq.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/ID09-XYhu.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/ID10-1ZAc.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/ID11-PMyc.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/ID12-JRJQ.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            
+            <div class="item">
+            <img  src="img/modal-carrousel/ID12-JRJQ.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/ID13-1bMT.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/ID11-PMyc.jpg" class="img-fluid mb-1" alt="">
             </div>
         </div>
+        </div>
+      </div>
     </div>
+  </div>
+</div>
+<div class="modal modal-edit fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-width">
+    <div class="modal-content">
+      <div class="modal-body p0">
+        <div class="close-modal btn-close" data-bs-dismiss="modal" aria-label="Close"></div>
+        <img src="img/modal-carrousel/milan design/bg-event-salone2016.jpg" class="img-fluid mb-5" alt="">
+        <!-- <div class="col-md-10 mx-auto mb-4">
+          <iframe width="100%" height="380"  src="https://www.youtube.com/embed/WPJSPfVmtiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div> -->
+        <div class="col-md-10 mx-auto">
+        <div id="about-slider6" class="owl-carousel owl-theme">
+            <div class="item">
+            <img  src="img/modal-carrousel/milan design/13-PS-MDW16-SCARLETSPLENDOUR-CLAUDIAZALLA-HR-tYa6.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/milan design/12-PS-MDW16-SCARLETSPLENDOUR-CLAUDIAZALLA-HR-9gVh.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/milan design/11-PS-MDW16-SCARLETSPLENDOUR-CLAUDIAZALLA-HR-AbP2.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/milan design/10-PS-MDW16-SCARLETSPLENDOUR-CLAUDIAZALLA-HR-WEY4.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/milan design/09-PS-MDW16-SCARLETSPLENDOUR-CLAUDIAZALLA-HR-2J3r.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/milan design/08-PS-MDW16-SCARLETSPLENDOUR-CLAUDIAZALLA-HR-jTmv.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/milan design/06-PS-MDW16-SCARLETSPLENDOUR-CLAUDIAZALLA-HR-HUCY.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/milan design/05-PS-MDW16-SCARLETSPLENDOUR-CLAUDIAZALLA-HR-kWvv.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/milan design/04-PS-MDW16-SCARLETSPLENDOUR-CLAUDIAZALLA-HR-5T2T.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/milan design/03-PS-MDW16-SCARLETSPLENDOUR-CLAUDIAZALLA-HR-606U.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/milan design/02-PS-MDW16-SCARLETSPLENDOUR-CLAUDIAZALLA-HR-9kgs.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/milan design/01-PS-MDW16-SCARLETSPLENDOUR-CLAUDIAZALLA-HR-cMe2.jpg" class="img-fluid mb-1" alt="">
+            </div>
+        </div>
+        </div>
+
+          
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal-edit fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-width">
+    <div class="modal-content">
+      <div class="modal-body p0">
+        <div class="close-modal btn-close" data-bs-dismiss="modal" aria-label="Close"></div>
+        <img src="img/modal-carrousel/Vogue Bffs/bg_vogue_epi1_mini.jpg" class="img-fluid mb-5" alt="">
+        <!-- <div class="col-md-10 mx-auto mb-4">
+          <iframe width="100%" height="380"  src="https://www.youtube.com/embed/WPJSPfVmtiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div> -->
+        <div class="col-md-10 mx-auto">
+        <div id="about-slider7" class="owl-carousel owl-theme">
+            <div class="item">
+            <img  src="img/modal-carrousel/Vogue Bffs/epi1-01-yj95-yv5G.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/Vogue Bffs/epi1-02-RaRa-y9p2.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/Vogue Bffs/epi1-03-9hJS-cW79.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/Vogue Bffs/epi1-04-zhk8-8GMU.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/Vogue Bffs/epi2-01-gY5M.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/Vogue Bffs/epi2-02-59Tt.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/Vogue Bffs/epi2-03-vXJj.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/Vogue Bffs/epi2-04-NfpP.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/Vogue Bffs/sepi2-05-BkZ7.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/Vogue Bffs/epi3-01-cq5n.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/Vogue Bffs/epi3-02-HWgV.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/Vogue Bffs/epi3-03-Gezq.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/Vogue Bffs/epi3-04-zrzr.jpg" class="img-fluid mb-1" alt="">
+            </div>
+           
+        </div>
+        </div>
+
+          
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal-edit fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-width">
+    <div class="modal-content">
+      <div class="modal-body p0">
+        <div class="close-modal btn-close" data-bs-dismiss="modal" aria-label="Close"></div>
+        <img src="img/modal-carrousel/India design id/bg-ID-closure-mini.jpg" class="img-fluid mb-5" alt="">
+        <div class="col-md-10 mx-auto mb-4">
+          <iframe width="100%" height="380"  src="https://www.youtube.com/embed/WPJSPfVmtiY" title="YouTube video player" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="col-md-10 mx-auto">
+        <div id="about-slider8" class="owl-carousel owl-theme">
+            <div class="item">
+            <img  src="img/modal-carrousel/India design id/01.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/India design id/02.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/India design id/03.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/India design id/04.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/India design id/05.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/India design id/06.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/India design id/07.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/India design id/08.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/India design id/09.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/India design id/10.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/India design id/11.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/India design id/12.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/India design id/13.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/India design id/.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/India design id/14.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/India design id/15.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/India design id/16.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/India design id/17.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/India design id/18.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/India design id/19.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/India design id/20.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/India design id/21.jpg" class="img-fluid mb-1" alt="">
+            </div>
+        </div>
+        </div>
+
+          
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal-edit fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-width">
+    <div class="modal-content">
+      <div class="modal-body p0">
+        <div class="close-modal btn-close" data-bs-dismiss="modal" aria-label="Close"></div>
+        <img src="img/modal-carrousel/Milan Design week/bg-mdw-17-mini.jpg" class="img-fluid mb-5" alt="">
+        <div class="col-md-10 mx-auto mb-4">
+          <!-- <iframe width="100%" height="380"  src="https://www.youtube.com/embed/WPJSPfVmtiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        </div>
+        <div class="col-md-10 mx-auto">
+        <div id="about-slider9" class="owl-carousel owl-theme">
+            <div class="item">
+            <img  src="img/modal-carrousel/Milan Design week/01_0.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/Milan Design week/02_0.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/Milan Design week/03_0.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/Milan Design week/04_0.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/Milan Design week/05_0.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/Milan Design week/06_0.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/Milan Design week/07_0.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/Milan Design week/09_0.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/Milan Design week/10_0.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/Milan Design week/11_0.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/Milan Design week/13_0.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/Milan Design week/14_0.jpg" class="img-fluid mb-1" alt="">
+            </div>
+        </div>
+        </div>
+
+          
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal-edit fade" id="exampleModal10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-width">
+    <div class="modal-content">
+      <div class="modal-body p0 h-full ">
+        <div class="close-modal btn-close" data-bs-dismiss="modal" aria-label="Close"></div>
+        <!-- <img src="img/bg-mdw.jpg" class="img-fluid mb-5" alt=""> -->
+        <div class="col-md-10 mx-auto mb-4 center-verticaly">
+          <iframe width="100%" height="380"  src="https://www.youtube.com/embed/evFa_SdTOeg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <!-- <div class="col-md-10 mx-auto">
+        <div id="about-slider10" class="owl-carousel owl-theme">
+            <div class="item">
+            <img  src="img/_85K1595.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K1768.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2223.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2239.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2256.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2292.jpg" class="img-fluid mb-1" alt="">
+            </div>
+        </div>
+        </div> -->
+
+          
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal-edit fade" id="exampleModal11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-width">
+    <div class="modal-content">
+      <div class="modal-body p0">
+        <div class="close-modal btn-close" data-bs-dismiss="modal" aria-label="Close"></div>
+        <img src="img/modal-carrousel/IDS VANCOUVER/bg_IDS_1_mini.jpg" class="img-fluid mb-5" alt="">
+        <div class="col-md-10 mx-auto mb-4">
+          <iframe width="100%" height="380"  src="https://www.youtube.com/embed/nQTIMYSyRS0" title="YouTube video player" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="col-md-10 mx-auto">
+        <div id="about-slider11" class="owl-carousel owl-theme">
+            <div class="item">
+            <img  src="img/modal-carrousel/IDS VANCOUVER/IDS_01.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/IDS VANCOUVER/IDS_02.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/IDS VANCOUVER/IDS_03.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/IDS VANCOUVER/IDS_04.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/IDS VANCOUVER/IDS_05.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/IDS VANCOUVER/IDS_06.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/IDS VANCOUVER/IDS_07.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/IDS VANCOUVER/IDS_08.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            
+        </div>
+        </div>
+
+          
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal-edit fade" id="exampleModal12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-width">
+    <div class="modal-content">
+      <div class="modal-body p0">
+        <div class="close-modal btn-close" data-bs-dismiss="modal" aria-label="Close"></div>
+        <img src="img/modal-carrousel/FOUR SEASONS MUMBAI/bg_fourseasons.jpg" class="img-fluid mb-5" alt="">
+        <div class="col-md-10 mx-auto mb-4">
+          <!-- <iframe width="100%" height="380"  src="https://www.youtube.com/embed/WPJSPfVmtiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        </div>
+        <div class="col-md-10 mx-auto">
+        <div id="about-slider12" class="owl-carousel owl-theme">
+            <div class="item">
+            <img  src="img/modal-carrousel/FOUR SEASONS MUMBAI/IMG_4191.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/FOUR SEASONS MUMBAI/IMG_4190.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/FOUR SEASONS MUMBAI/IMG_4189.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/FOUR SEASONS MUMBAI/IMG_4188.jpg" class="img-fluid mb-1" alt="">
+            </div>
+           
+        </div>
+        </div>
+
+          
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal-edit fade" id="exampleModal13" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-width">
+    <div class="modal-content">
+      <div class="modal-body p0">
+        <div class="close-modal btn-close" data-bs-dismiss="modal" aria-label="Close"></div>
+        <img src="img/modal-carrousel/IDECORAMA/bg_iDecorama_Closure.jpg" class="img-fluid mb-5" alt="">
+        <div class="col-md-10 mx-auto mb-4">
+          <!-- <iframe width="100%" height="380"  src="https://www.youtube.com/embed/WPJSPfVmtiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        </div>
+        <div class="col-md-10 mx-auto">
+        <div id="about-slider13" class="owl-carousel owl-theme">
+            <div class="item">
+            <img  src="img/modal-carrousel/IDECORAMA/2X6A8482.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/IDECORAMA/2X6A8476.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/IDECORAMA/2X6A8472.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/IDECORAMA2X6A8469.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/IDECORAMA/2X6A8398.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/IDECORAMA/2X6A8195.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/IDECORAMA/2X6A8138.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            
+        </div>
+        </div>
+
+          
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal-edit fade" id="exampleModal14" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-width">
+    <div class="modal-content">
+      <div class="modal-body p0">
+        <div class="close-modal btn-close" data-bs-dismiss="modal" aria-label="Close"></div>
+        <img src="img/modal-carrousel/idi 2018/bg_ID_2018_1a_mini.jpg" class="img-fluid mb-5" alt="">
+        <div class="col-md-10 mx-auto mb-4">
+          <!-- <iframe width="100%" height="380"  src="https://www.youtube.com/embed/WPJSPfVmtiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        </div>
+        <div class="col-md-10 mx-auto">
+        <div id="about-slider14" class="owl-carousel owl-theme">
+            <div class="item">
+            <img  src="img/modal-carrousel/idi 2018/ID_2018_1.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/idi 2018/ID_2018_2.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/idi 2018/ID_2018_3.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/idi 2018/ID_2018_4.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/idi 2018/ID_2018_5.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/idi 2018/ID_2018_9.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/idi 2018/ID_2018_10.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/idi 2018/ID_2018_11.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/idi 2018/ID_2018_12.jpg" class="img-fluid mb-1" alt="">
+            </div>
+        </div>
+        </div>
+
+          
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal-edit fade" id="exampleModal15" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-width">
+    <div class="modal-content">
+      <div class="modal-body p0">
+        <div class="close-modal btn-close" data-bs-dismiss="modal" aria-label="Close"></div>
+        <img src="img/modal-carrousel/ALTAGAMMA/bg_altagama_mini.jpg" class="img-fluid mb-5" alt="">
+        <div class="col-md-10 mx-auto mb-4">
+          <!-- <iframe width="100%" height="380"  src="https://www.youtube.com/embed/WPJSPfVmtiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        </div>
+        <div class="col-md-10 mx-auto">
+        <div id="about-slider15" class="owl-carousel owl-theme">
+            <div class="item">
+            <img  src="img/modal-carrousel/ALTAGAMMA/altagamma_4.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/ALTAGAMMA/altagamma_5.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/ALTAGAMMA/altagamma_6.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/ALTAGAMMA/altagamma_7.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/ALTAGAMMA/altagamma_8.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/ALTAGAMMA/altagamma_9.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/ALTAGAMMA/altagamma_12.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/ALTAGAMMA/altagamma_10.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <!-- <div class="item">
+            <img  src="img/modal-carrousel/ALTAGAMMA/altagamma_11jpg" class="img-fluid mb-1" alt="">
+            </div> -->
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal-edit fade" id="exampleModal16" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-width">
+    <div class="modal-content">
+      <div class="modal-body p0">
+        <div class="close-modal btn-close" data-bs-dismiss="modal" aria-label="Close"></div>
+        <img src="img/modal-carrousel/DCODE/bg_dcode2018_mini.jpg" class="img-fluid mb-5" alt="">
+        <div class="col-md-10 mx-auto mb-4">
+          <!-- <iframe width="100%" height="380"  src="https://www.youtube.com/embed/WPJSPfVmtiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        </div>
+        <div class="col-md-10 mx-auto">
+        <div id="about-slider16" class="owl-carousel owl-theme">
+            <div class="item">
+            <img  src="img/modal-carrousel/DCODE/dcode-01.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/DCODE/dcode-02.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/DCODE/dcode-03.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/DCODE/dcode-04.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/DCODE/dcode-05.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/DCODE/dcode-06.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/DCODE/dcode-07.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/DCODE/dcode-08.jpg" class="img-fluid mb-1" alt="">
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal-edit fade" id="exampleModal16" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-width">
+    <div class="modal-content">
+      <div class="modal-body p0">
+        <div class="close-modal btn-close" data-bs-dismiss="modal" aria-label="Close"></div>
+        <img src="img/modal-carrousel/ALTAGAMMA/bg_altagama_mini.jpg" class="img-fluid mb-5" alt="">
+        <div class="col-md-10 mx-auto mb-4">
+          <iframe width="100%" height="380"  src="https://www.youtube.com/embed/WPJSPfVmtiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="col-md-10 mx-auto">
+        <div id="about-slider16" class="owl-carousel owl-theme">
+            <div class="item">
+            <img  src="img/modal-carrousel/ALTAGAMMA/altagamma_4.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/ALTAGAMMA/altagamma_5.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/ALTAGAMMA/altagamma_6.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/ALTAGAMMA/altagamma_7.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/ALTAGAMMA/altagamma_8.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/ALTAGAMMA/altagamma_9.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/ALTAGAMMA/altagamma_12.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/ALTAGAMMA/altagamma_10.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/ALTAGAMMA/altagamma_11jpg" class="img-fluid mb-1" alt="">
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal-edit fade" id="exampleModal17" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-width">
+    <div class="modal-content">
+      <div class="modal-body p0">
+        <div class="close-modal btn-close" data-bs-dismiss="modal" aria-label="Close"></div>
+        <img src="img/modal-carrousel/MILAN DESIGN WEEK 2018/bg_salone_2018_mini.jpg" class="img-fluid mb-5" alt="">
+        <div class="col-md-10 mx-auto mb-4">
+          <!-- <iframe width="100%" height="380"  src="https://www.youtube.com/embed/WPJSPfVmtiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        </div>
+        <div class="col-md-10 mx-auto">
+        <div id="about-slider17" class="owl-carousel owl-theme">
+            <div class="item">
+            <img  src="img/modal-carrousel/MILAN DESIGN WEEK 2018/01_1.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/MILAN DESIGN WEEK 2018/02_1.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/MILAN DESIGN WEEK 2018/03_1.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/MILAN DESIGN WEEK 2018/04_1.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/MILAN DESIGN WEEK 2018/06_1.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/MILAN DESIGN WEEK 2018/07_1.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/MILAN DESIGN WEEK 2018/08_1.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/MILAN DESIGN WEEK 2018/09_1.jpg" class="img-fluid mb-1" alt="">
+            </div>
+        </div>
+        </div>
+
+          
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal-edit fade" id="exampleModal18" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-width">
+    <div class="modal-content">
+      <div class="modal-body p0">
+        <div class="close-modal btn-close" data-bs-dismiss="modal" aria-label="Close"></div>
+        <img src="img/modal-carrousel/COLOURNEXT 2019/bg_colornext_desktop.jpg" class="img-fluid mb-5" alt="">
+        <!-- <div class="col-md-10 mx-auto mb-4">
+          <iframe width="100%" height="380"  src="https://www.youtube.com/embed/WPJSPfVmtiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div> -->
+        <div class="col-md-10 mx-auto">
+        <div id="about-slider18" class="owl-carousel owl-theme">
+            <div class="item">
+            <img  src="img/modal-carrousel/COLOURNEXT 2019/enchanted-cam29.png" class="img-fluid mb-1" alt="">
+            </div>
+            
+            <div class="item">
+            <img  src="img/modal-carrousel/COLOURNEXT 2019/enchanted-cam12.png" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/COLOURNEXT 2019/enchanted-cam11.png" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/COLOURNEXT 2019/enchanted-cam01.png" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/COLOURNEXT 2019/cam10.png" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/COLOURNEXT 2019/cam04.png" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/COLOURNEXT 2019/cam01.png" class="img-fluid mb-1" alt="">
+            </div>
+        </div>
+        </div>
+
+          
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal-edit fade" id="exampleModal19" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-width">
+    <div class="modal-content">
+      <div class="modal-body p0">
+        <div class="close-modal btn-close" data-bs-dismiss="modal" aria-label="Close"></div>
+        <img src="img/modal-carrousel/MILAN DESIGN WEEK 2019/bg_milano_desktop_new2.jpg" class="img-fluid mb-5" alt="">
+        <!-- <div class="col-md-10 mx-auto mb-4">
+          <iframe width="100%" height="380"  src="https://www.youtube.com/embed/WPJSPfVmtiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div> -->
+        <div class="col-md-10 mx-auto">
+        <div id="about-slider19" class="owl-carousel owl-theme">
+            <div class="item">
+            <img  src="img/modal-carrousel/MILAN DESIGN WEEK 2019/No.1.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/MILAN DESIGN WEEK 2019/No.2.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/MILAN DESIGN WEEK 2019/No.3.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/MILAN DESIGN WEEK 2019/No.4.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/MILAN DESIGN WEEK 2019/No.5.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/MILAN DESIGN WEEK 2019/No.6.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/MILAN DESIGN WEEK 2019/No.7.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/MILAN DESIGN WEEK 2019/No.8.jpg" class="img-fluid mb-1" alt="">
+            </div>
+        </div>
+        </div>
+
+          
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal-edit fade" id="exampleModal20" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-width">
+    <div class="modal-content">
+      <div class="modal-body p0 h-full">
+        <div class="close-modal btn-close" data-bs-dismiss="modal" aria-label="Close"></div>
+        <!-- <img src="img/bg-mdw.jpg" class="img-fluid mb-5" alt=""> -->
+        <div class="col-md-10 mx-auto mb-4 center-verticaly">
+          <iframe width="100%" height="380"  src="https://www.youtube.com/embed/bBiyQlxeOFU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <!-- <div class="col-md-10 mx-auto">
+        <div id="about-slider20" class="owl-carousel owl-theme">
+            <div class="item">
+            <img  src="img/_85K1595.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K1768.jpg" class="img-fluid mb-1" alt="">
+            </div>
+        
+        </div>
+        </div> -->
+
+          
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal-edit fade" id="exampleModal21" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-width">
+    <div class="modal-content">
+      <div class="modal-body p0 h-full">
+        <div class="close-modal btn-close" data-bs-dismiss="modal" aria-label="Close"></div>
+        <!-- <img src="img/bg-mdw.jpg" class="img-fluid mb-5" alt=""> -->
+        <div class="col-md-10 mx-auto mb-4 center-verticaly">
+          <iframe width="100%" height="380"  src="https://www.youtube.com/embed/fLI3BFbO-b4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <!-- <div class="col-md-10 mx-auto">
+        <div id="about-slide21" class="owl-carousel owl-theme">
+            <div class="item">
+            <img  src="img/_85K1595.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K1768.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2223.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2239.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2256.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2292.jpg" class="img-fluid mb-1" alt="">
+            </div>
+        </div>
+        </div> -->
+
+          
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal-edit fade" id="exampleModal22" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-width">
+    <div class="modal-content">
+      <div class="modal-body p0 h-full">
+        <div class="close-modal btn-close " data-bs-dismiss="modal" aria-label="Close"></div>
+        <!-- <img src="img/bg-mdw.jpg" class="img-fluid mb-5" alt=""> -->
+        <div class="col-md-10 mx-auto mb-4 center-verticaly">
+          <iframe width="100%" height="380"  src="https://www.youtube.com/embed/tQrsIGM-_Ik" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <!-- <div class="col-md-10 mx-auto">
+        <div id="about-slider22" class="owl-carousel owl-theme">
+            <div class="item">
+            <img  src="img/_85K1595.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K1768.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2223.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2239.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2256.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2292.jpg" class="img-fluid mb-1" alt="">
+            </div>
+        </div>
+        </div> -->
+
+          
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal-edit fade" id="exampleModal23" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-width">
+    <div class="modal-content">
+      <div class="modal-body p0 h-full">
+        <div class="close-modal btn-close" data-bs-dismiss="modal" aria-label="Close"></div>
+        <!-- <img src="img/bg-mdw.jpg" class="img-fluid mb-5" alt=""> -->
+        <div class="col-md-10 mx-auto mb-4 center-verticaly">
+          <iframe width="100%" height="380"  src="https://www.youtube.com/embed/bPMUITTfCJo" title="YouTube video player" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <!-- <div class="col-md-10 mx-auto">
+        <div id="about-slider23" class="owl-carousel owl-theme">
+            <div class="item">
+            <img  src="img/_85K1595.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K1768.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2223.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2239.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2256.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2292.jpg" class="img-fluid mb-1" alt="">
+            </div>
+        </div>
+        </div> -->
+
+          
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal-edit fade" id="exampleModal24" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-width">
+    <div class="modal-content">
+      <div class="modal-body p0 h-full">
+        <div class="close-modal btn-close" data-bs-dismiss="modal" aria-label="Close"></div>
+        <img src="img/modal-carrousel/AD DESIGN SHOW 2019/bg_adds_invite_desktop.jpg" class="img-fluid mb-5" alt="">
+        <!-- <div class="col-md-10 mx-auto mb-4">
+          <iframe width="100%" height="380"  src="https://www.youtube.com/embed/WPJSPfVmtiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div> -->
+        <div class="col-md-10 mx-auto ">
+        <div id="about-slider24" class="owl-carousel owl-theme">
+            <div class="item">
+            <img  src="img/modal-carrousel/AD DESIGN SHOW 2019/1P9A9116.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/AD DESIGN SHOW 2019/1P9A9107.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/AD DESIGN SHOW 2019/1P9A9074.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/AD DESIGN SHOW 2019/1P9A9057.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/AD DESIGN SHOW 2019/1P9A9042_1.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/AD DESIGN SHOW 2019/1P9A9042.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/AD DESIGN SHOW 2019/1P9A9031.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/AD DESIGN SHOW 2019/1P9A9023.jpg" class="img-fluid mb-1" alt="">
+            </div>
+        </div>
+        </div>
+
+          
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal-edit fade" id="exampleModal25" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-width">
+    <div class="modal-content">
+      <div class="modal-body p0">
+        <div class="close-modal btn-close" data-bs-dismiss="modal" aria-label="Close"></div>
+        <img src="img/modal-carrousel/THE TWISTED SUNDAY BRUNCH/bg_twisted_brunch_desktop.jpg" class="img-fluid mb-5" alt="">
+        <!-- <div class="col-md-10 mx-auto mb-4">
+          <iframe width="100%" height="380"  src="https://www.youtube.com/embed/WPJSPfVmtiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div> -->
+        <div class="col-md-10 mx-auto">
+        <div id="about-slider25" class="owl-carousel owl-theme">
+            <div class="item">
+            <img  src="img/modal-carrousel/THE TWISTED SUNDAY BRUNCH/_JFX5419.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/THE TWISTED SUNDAY BRUNCH/_JFX5337.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/THE TWISTED SUNDAY BRUNCH/_JFX5318.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/THE TWISTED SUNDAY BRUNCH/_JFX5288.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/THE TWISTED SUNDAY BRUNCH/_JFX5265.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/THE TWISTED SUNDAY BRUNCH/_JFX5229.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/THE TWISTED SUNDAY BRUNCH/_JFX5220.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/THE TWISTED SUNDAY BRUNCH/_JFX5201.jpg" class="img-fluid mb-1" alt="">
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal-edit fade" id="exampleModal26" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-width">
+    <div class="modal-content">
+      <div class="modal-body p0">
+        <div class="close-modal btn-close" data-bs-dismiss="modal" aria-label="Close"></div>
+        <img src="img/modal-carrousel/10 CHAIRS X STIR/bg_10_chair_event_desktop.jpg" class="img-fluid mb-5" alt="">
+        <!-- <div class="col-md-10 mx-auto mb-4">
+          <iframe width="100%" height="380"  src="https://www.youtube.com/embed/WPJSPfVmtiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div> -->
+        <div class="col-md-10 mx-auto">
+        <div id="about-slider26" class="owl-carousel owl-theme">
+            <div class="item">
+            <img  src="img/modal-carrousel/10 CHAIRS X STIR/2X6A0124copy.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/10 CHAIRS X STIR/2X6A0121copy.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/10 CHAIRS X STIR/2X6A0120copy.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/10 CHAIRS X STIR/2X6A0117copy.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/10 CHAIRS X STIR/2X6A0072.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            
+        </div>
+        </div>
+
+          
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal-edit fade" id="exampleModal27" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-width">
+    <div class="modal-content">
+      <div class="modal-body p0">
+        <div class="close-modal btn-close" data-bs-dismiss="modal" aria-label="Close"></div>
+        <img src="img/modal-carrousel/INDIA DESIGN ID 2020/bg_india_design_2020_desktop.jpg" class="img-fluid mb-5" alt="">
+        <!-- <div class="col-md-10 mx-auto mb-4">
+          <iframe width="100%" height="380"  src="https://www.youtube.com/embed/WPJSPfVmtiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div> -->
+        <div class="col-md-10 mx-auto">
+        <div id="about-slider27" class="owl-carousel owl-theme">
+            <div class="item">
+            <img  src="img/modal-carrousel/INDIA DESIGN ID 2020/2Q2A6379.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/INDIA DESIGN ID 2020/2Q2A6368.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/INDIA DESIGN ID 2020/2Q2A6367.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/INDIA DESIGN ID 2020/2Q2A5563.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/INDIA DESIGN ID 2020/2Q2A5519.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/INDIA DESIGN ID 2020/2Q2A5490.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/modal-carrousel/INDIA DESIGN ID 2020/2Q2A5454.jpg" class="img-fluid mb-1" alt="">
+            </div>
+        </div>
+        </div>
+
+          
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal-edit fade" id="exampleModal25" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-width">
+    <div class="modal-content">
+      <div class="modal-body p0 h-full">
+        <div class="close-modal btn-close" data-bs-dismiss="modal" aria-label="Close"></div>
+        <!-- <img src="img/bg-mdw.jpg" class="img-fluid mb-5" alt=""> -->
+        <div class="col-md-10 mx-auto mb-4 center-verticaly">
+          <iframe width="100%" height="380"  src="https://www.youtube.com/embed/WPJSPfVmtiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <!-- <div class="col-md-10 mx-auto">
+        <div id="about-slider29" class="owl-carousel owl-theme">
+            <div class="item">
+            <img  src="img/_85K1595.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K1768.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2223.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2239.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2256.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2292.jpg" class="img-fluid mb-1" alt="">
+            </div>
+        </div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal-edit fade" id="exampleModal26" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-width">
+    <div class="modal-content">
+      <div class="modal-body p0 h-full">
+        <div class="close-modal btn-close" data-bs-dismiss="modal" aria-label="Close"></div>
+        <!-- <img src="img/bg-mdw.jpg" class="img-fluid mb-5" alt=""> -->
+        <div class="col-md-10 mx-auto mb-4 center-verticaly">
+          <iframe width="100%" height="380"  src="https://www.youtube.com/embed/cztCsSiSgY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <!-- <div class="col-md-10 mx-auto">
+        <div id="about-slider30" class="owl-carousel owl-theme">
+            <div class="item">
+            <img  src="img/_85K1595.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K1768.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2223.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2239.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2256.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2292.jpg" class="img-fluid mb-1" alt="">
+            </div>
+        </div>
+        </div> -->
+
+          
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal-edit fade" id="exampleModal27" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-width">
+    <div class="modal-content">
+      <div class="modal-body p0 h-full">
+        <div class="close-modal btn-close" data-bs-dismiss="modal" aria-label="Close"></div>
+        <!-- <img src="img/bg-mdw.jpg" class="img-fluid mb-5" alt=""> -->
+        <div class="col-md-10 mx-auto mb-4 center-verticaly">
+          <iframe width="100%" height="380"  src="https://www.youtube.com/embed/WPJSPfVmtiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <!-- <div class="col-md-10 mx-auto">
+        <div id="about-slider31" class="owl-carousel owl-theme">
+            <div class="item">
+            <img  src="img/_85K1595.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K1768.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2223.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2239.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2256.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2292.jpg" class="img-fluid mb-1" alt="">
+            </div>
+        </div>
+        </div> -->
+
+          
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal-edit fade" id="exampleModal28" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-width">
+    <div class="modal-content">
+      <div class="modal-body p0 h-full ">
+        <div class="close-modal btn-close " data-bs-dismiss="modal" aria-label="Close"></div>
+        <!-- <img src="img/bg-mdw.jpg" class="img-fluid mb-5" alt=""> -->
+        <div class="col-md-10 mx-auto mb-4 center-verticaly">
+          <iframe width="100%" height="380"  src="https://www.youtube.com/embed/cztCsSiSgY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <!-- <div class="col-md-10 mx-auto">
+        <div id="about-slider32" class="owl-carousel owl-theme">
+            <div class="item">
+            <img  src="img/_85K1595.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K1768.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2223.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2239.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2256.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2292.jpg" class="img-fluid mb-1" alt="">
+            </div>
+        </div>
+        </div> -->
+
+          
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal-edit fade" id="exampleModal29" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-width">
+    <div class="modal-content">
+      <div class="modal-body p0 h-full">
+        <div class="close-modal btn-close" data-bs-dismiss="modal" aria-label="Close"></div>
+        <!-- <img src="img/bg-mdw.jpg" class="img-fluid mb-5" alt=""> -->
+        <div class="col-md-10 mx-auto mb-4 center-verticaly">
+          <iframe width="100%" height="380"  src="https://www.youtube.com/embed/PJSvON1AAwk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <!-- <div class="col-md-10 mx-auto">
+        <div id="about-slider33" class="owl-carousel owl-theme">
+            <div class="item">
+            <img  src="img/_85K1595.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K1768.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2223.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2239.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2256.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2292.jpg" class="img-fluid mb-1" alt="">
+            </div>
+        </div>
+        </div> -->
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal-edit fade" id="exampleModal30" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-width">
+    <div class="modal-content">
+      <div class="modal-body p0 h-full">
+        <div class="close-modal btn-close" data-bs-dismiss="modal" aria-label="Close"></div>
+        <!-- <img src="img/bg-mdw.jpg" class="img-fluid mb-5" alt=""> -->
+        <div class="col-md-10 mx-auto mb-4 center-verticaly">
+          <iframe width="100%" height="380"  src="https://www.youtube.com/embed/RwDfltEQ8vU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <!-- <div class="col-md-10 mx-auto">
+        <div id="about-slider34" class="owl-carousel owl-theme">
+            <div class="item">
+            <img  src="img/_85K1595.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K1768.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2223.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2239.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2256.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2292.jpg" class="img-fluid mb-1" alt="">
+            </div>
+        </div>
+        </div> -->
+
+          
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal-edit fade" id="exampleModal31" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-width">
+    <div class="modal-content">
+      <div class="modal-body p0 h-full">
+        <div class="close-modal btn-close" data-bs-dismiss="modal" aria-label="Close"></div>
+        <!-- <img src="img/bg-mdw.jpg" class="img-fluid mb-5" alt=""> -->
+        <div class="col-md-10 mx-auto mb-4  center-verticaly">
+          <iframe width="100%" height="380"  src="https://www.youtube.com/embed/Gs_6Lr9OG3A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <!-- <div class="col-md-10 mx-auto">
+        <div id="about-slider35" class="owl-carousel owl-theme">
+            <div class="item">
+            <img  src="img/_85K1595.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K1768.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2223.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2239.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2256.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2292.jpg" class="img-fluid mb-1" alt="">
+            </div>
+        </div>
+        </div> -->
+
+          
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal-edit fade" id="exampleModal32" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-width">
+    <div class="modal-content">
+      <div class="modal-body p0 h-full">
+        <div class="close-modal btn-close" data-bs-dismiss="modal" aria-label="Close"></div>
+        <!-- <img src="img/bg-mdw.jpg" class="img-fluid mb-5" alt=""> -->
+        <div class="col-md-10 mx-auto mb-4  center-verticaly">
+          <iframe width="100%" height="380"  src="https://www.youtube.com/embed/03QNj1cauvA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <!-- <div class="col-md-10 mx-auto">
+        <div id="about-slider36" class="owl-carousel owl-theme">
+            <div class="item">
+            <img  src="img/_85K1595.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K1768.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2223.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2239.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2256.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2292.jpg" class="img-fluid mb-1" alt="">
+            </div>
+        </div>
+        </div> -->
+
+          
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal-edit fade" id="exampleModal33" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-width">
+    <div class="modal-content">
+      <div class="modal-body p0 h-full">
+        <div class="close-modal btn-close" data-bs-dismiss="modal" aria-label="Close"></div>
+        <!-- <img src="img/bg-mdw.jpg" class="img-fluid mb-5" alt=""> -->
+        <div class="col-md-10 mx-auto mb-4  center-verticaly">
+          <iframe width="100%" height="380"  src="https://www.youtube.com/embed/waVGTbndc9s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <!-- <div class="col-md-10 mx-auto">
+        <div id="about-slide37r" class="owl-carousel owl-theme">
+            <div class="item">
+            <img  src="img/_85K1595.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K1768.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2223.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2239.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2256.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2292.jpg" class="img-fluid mb-1" alt="">
+            </div>
+        </div>
+        </div> -->
+
+          
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal-edit fade" id="exampleModal34" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-width">
+    <div class="modal-content">
+      <div class="modal-body p0 h-full">
+        <div class="close-modal btn-close" data-bs-dismiss="modal" aria-label="Close"></div>
+        <!-- <img src="img/bg-mdw.jpg" class="img-fluid mb-5" alt=""> -->
+        <div class="col-md-10 mx-auto mb-4  center-verticaly">
+          <iframe width="100%" height="380"  src="https://www.youtube.com/embed/Y-r10kS0WHA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <!-- <div class="col-md-10 mx-auto">
+        <div id="about-slider38" class="owl-carousel owl-theme">
+            <div class="item">
+            <img  src="img/_85K1595.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K1768.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2223.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2239.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2256.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2292.jpg" class="img-fluid mb-1" alt="">
+            </div>
+        </div>
+        </div> -->
+
+          
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal-edit fade" id="exampleModal35" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-width">
+    <div class="modal-content">
+      <div class="modal-body p0 h-full">
+        <div class="close-modal btn-close" data-bs-dismiss="modal" aria-label="Close"></div>
+        <img src="img/products/oasis-collection.jpg" class="img-fluid mb-5" alt="">
+        <div class="col-md-10 mx-auto mb-4  center-verticaly">
+          <!-- <iframe width="100%" height="380"  src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        </div>
+        <!-- <div class="col-md-10 mx-auto">
+        <div id="about-slider38" class="owl-carousel owl-theme">
+            <div class="item">
+            <img  src="img/_85K1595.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K1768.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2223.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2239.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2256.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2292.jpg" class="img-fluid mb-1" alt="">
+            </div>
+        </div>
+        </div> -->
+
+          
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal-edit fade" id="exampleModal36" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-width">
+    <div class="modal-content">
+      <div class="modal-body p0 h-full">
+        <div class="close-modal btn-close" data-bs-dismiss="modal" aria-label="Close"></div>
+        <img src="img/products/procat15.jpg" class="img-fluid mb-5" alt="">
+        <div class="col-md-10 mx-auto mb-4  center-verticaly">
+          <!-- <iframe width="100%" height="380"  src="https://www.youtube.com/embed/WPJSPfVmtiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        </div>
+        <!-- <div class="col-md-10 mx-auto">
+        <div id="about-slider38" class="owl-carousel owl-theme">
+            <div class="item">
+            <img  src="img/_85K1595.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K1768.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2223.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2239.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2256.jpg" class="img-fluid mb-1" alt="">
+            </div>
+            <div class="item">
+            <img  src="img/_85K2292.jpg" class="img-fluid mb-1" alt="">
+            </div>
+        </div>
+        </div> -->
+
+          
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<?php include('includes/footer.php'); ?>
 
 
 
 
 
 
-    <script src="jquery.min.js"></script>
-    <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
-    <script src="owl.min.js"></script>
-    <!-- <script>
-            $('.owl-carousel').owlCarousel({
-                items:4,
-                loop:true,
-                margin: 10,
-                autoplay:true,
-    autoplayTimeout:1000,
-    autoplayHoverPause:true,
-                responsiveClass: true,
-
-                responsive: {
-                    0: {
-                        items: 1,
-                        nav: true
-                    },
-                    600: {
-                        items: 2,
-                        nav: false
-                    },
-                    1000: {
-                        items: 2,
-                        nav: true,
-                        loop: false
-                    }
-
-                }
-            })
-        </script> -->
-
-    <script>
-        $('#owl-carousel1').owlCarousel({
-            margin: 10,
-            autoplay: true,
-            autoplayTimeout: 1000,
-            autoplayHoverPause: true,
-            responsiveClass: true,
-            // smartSpeed: 500,
-            nav: true,
-            dots: ($(".owl-carousel .item").length > 1) ? true : false,
-            loop: true,
-            responsive: {
-                0: {
-                    items: 1,
-                },
-                500: {
-                    items: 2,
-                },
-                768: {
-                    items: 2,
-                }
-            }
-        })
-    </script>
-
-</body>
-
-</html>
